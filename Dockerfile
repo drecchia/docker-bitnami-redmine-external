@@ -1,4 +1,4 @@
-FROM dockerfile/ubuntu
+FROM centos:centos7
 
 MAINTAINER Danilo Trani Recchia <danilo@deltatecnologia.com>
 
