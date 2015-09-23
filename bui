@@ -1,0 +1,10 @@
+company="delta"
+software="bitname-external-redmine"
+version="1.0.0"
+
+docker build -t ${company}/${software}:${version} .  | tee build.log || exit 1
+ID=$(tail -1 build.log | awk '{print $3;}')
+
+docker tag -f $ID ${company}/${software}:${version}
+#docker tag -f $ID localhost:5000/${company}/${software}:${version}
+#docker push localhost:5000/${company}/${software}:${version} 
