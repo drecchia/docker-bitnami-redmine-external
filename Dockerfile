@@ -1,4 +1,4 @@
-FROM dockerfile/ubuntu
+FROM ubuntu
 
 MAINTAINER Danilo Trani Recchia <danilo@deltatecnologia.com>
 
